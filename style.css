@@ -1,0 +1,51 @@
+#nav_princ/* selector por id*/{        
+    color: tomato;
+}
+.cuentas/* Selector por class */{           
+    color: #11ff94;
+}
+.saldo_en_las_cuentas/* Selector por class */{ 
+    color: #ff1eee;
+}
+p.caja/* Selector por class */{             
+    color: #a1a222;
+}
+p.cuenta/* Selector por class */{
+    color: #195772;
+}
+div p/* Selector por class */{           
+    color: #00d9ff;
+}
+* /* Selector por class */{                  
+    font-size: 24px;
+    color:  black;
+}
+/*
+.color{
+    color: #33aa58;     1eros digitos: rojo
+                        2dos digitos: verde
+                        3eros digitos: azul  
+}
+*/
+.color{ 
+    /*Asignacion de Borde a los elementos de html*/
+    /*Hay dist medidas: pixel(px), centimetros(cm), pulgadas(in), milimitros(mm), em = tamaño de la fuente que estamos utilizando, rem = tamaño de la fuente raiz (aprox 16px)*/
+    /* border: 5px black solid; */ /*border: grosor - color - estilo del borde*/
+    /* Tipos de Bordes mas comunes que podemos tener:
+        dotted
+        dashed
+        solid
+        double
+        groove
+        ridge
+        inset
+        outset
+        none
+        hidden
+    */
+    border-style: solid;
+    border-color: blue;
+    border-radius: 6px; /*Borde redondeado*/
+    border-width: 2rem;/*Ancho del Borde*/
+
+}

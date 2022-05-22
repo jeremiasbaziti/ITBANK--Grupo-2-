@@ -1,44 +1,41 @@
 <!DOCTYPE html>   
 <html>   
-<head>  
-<meta name="viewport" content="width=device-width, initial-scale=1">  
+<head>
+    <link rel="stylesheet" href="estadodecuenta.css"/>   
+<meta name="viewport" content="width=device-width, initial-scale=1"> 
 <title> Pagina de Ingreso ITBANK</title> 
 </head>    
 <body>    
-    <center> <h1> ITBANK </h1>
-    <form>  
+    
+    <center> <vertical-center> <h1> ITBANK </h1>
+    <form>  <div class="center">
         <div class="container">   
-            <label>DNI : </label>   
-            <br> <br>
-            <input type="texto" placeholder="Ingrese DNI" name="DNI" required>  
-            <br> <br> <br>
-        
-            <label>Usuario </label>   
-            <br><br>
-           
-            <input type="texto" placeholder="Ingrese Usuario" name="usuario" required>  
-            <br><br><br>
-           
-            <label>Contraseña : </label>   
-            <br><br>
             
-            <input type="Contraseña" placeholder="Ingrese Contraseña" name="contrasena" required>  
-            <br><br><br>
-           
-            <button type="Ingresar">Login</button>   
+            <div class="form-group">
+                <label class="form-label mt-4">Ingresar</label>
+                <div class="form-floating mb-3">
+                  <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                  <label for="floatingInput">DNI</label>
+                </div>
+                <div class="form-floating">
+                  <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                  <label for="floatingPassword">Usuario</label>
+                </div>
+              </div>  
+              <div class="form-floating">
+                <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                <label for="floatingPassword">Contraseña</label>
+              </div>
+            </div>  
+
+                <button class="btn btn-primary" type="button" id="button-addon2">Ingresar</button>
+              </div>
             <br><br>
-            
             <input type="checkbox" checked="checked"> Recuerdame  
             <br><br>
-            
-            <button type="button"  
-            
     
-            <a href="#"> Olvido su Contraseña? </a>   
 
         </center>   
 
         </div>   
     </form>     
-</body>     
-</html>  

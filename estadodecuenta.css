@@ -11300,7 +11300,7 @@ span.psw {
     width: 100%;
   }
 }
-<style>
+
 .container {
   height: 200px;
   position: relative;
@@ -11315,10 +11315,5 @@ span.psw {
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
-</style>
 
-<div class="container">
-  <div class="center">
-    <p>I am vertically and horizontally centered.</p>
-  </div>
-</div>
+

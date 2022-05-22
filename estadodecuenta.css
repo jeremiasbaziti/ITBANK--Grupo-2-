@@ -1,8 +1,23 @@
 header{
     margin: 0px;
     padding: 5px;
-    background-color: cornflowerblue;
+    background-color: #fff;
     font-size: 24px;
-    color: #fff;
+    color: blue;
     text-align: center;
+}
+
+/* nav:hover{
+    transition: ease 0.6s;
+    background-color: gray;
+} */
+.menu{
+    padding: 5px;
+    position: relative;
+    bottom: 59px;
+    left: 10px;
+    color: blue;
+    display: inline;
+    border: 1px black solid;
+    border-radius: 6px;
 }

@@ -1,23 +1,25 @@
-header{
-    margin: 0px;
-    padding: 5px;
-    background-color: #fff;
-    font-size: 24px;
-    color: blue;
+.nom_emp{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%); /*se corre el punto de anclaje al centro del elemento*/
     text-align: center;
+    background-color: #ffffff;
+    color: blue;
 }
 
-/* nav:hover{
-    transition: ease 0.6s;
-    background-color: gray;
-} */
-.menu{
-    padding: 5px;
-    position: relative;
-    bottom: 59px;
-    left: 10px;
-    color: blue;
-    display: inline;
-    border: 1px black solid;
-    border-radius: 6px;
+menu:hover{
+    transition: ease 0.5;
+    background-color: darkslategray;
 }
+ 
+.menu{
+    padding: 3px;
+    text-align: center;
+    color: blue;
+    border: 2px black solid;
+    border-radius: 20px;
+    width: fit-content;
+    position: relative;
+    top: 8px;
+    left: 15px;
+} 

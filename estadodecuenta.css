@@ -1,4 +1,5 @@
 .nom_emp{
+    display: inline;
     position: absolute;
     left: 50%;
     transform: translate(-50%, -50%); /*se corre el punto de anclaje al centro del elemento*/
@@ -7,12 +8,8 @@
     color: blue;
 }
 
-menu:hover{
-    transition: ease 0.5;
-    background-color: darkslategray;
-}
- 
-.menu{
+
+.nav{
     padding: 3px;
     text-align: center;
     color: blue;
@@ -23,3 +20,46 @@ menu:hover{
     top: 8px;
     left: 15px;
 } 
+
+.nav:hover{
+    transition: ease 1s;
+    background-color: #da6725c4;
+    cursor: pointer;
+}
+
+.nav{
+    float: left;
+} 
+
+.menu_nav{
+    padding: 10px;
+    margin: 10px;
+    overflow: hidden;
+}
+
+.info{
+    background-color: rgba(49, 216, 216, 0.385);
+    border-style: solid;
+    border-radius: 10px;
+    padding: 0px 5px;
+}
+
+.cuentas{
+    padding: 5px 0px 0px 0px;
+    margin: 0px 0px 10px 0px;
+}
+
+.s_t_cuenta{
+    font-size: 25px;
+    padding: 0px;
+    margin: 0px;
+}
+.cant_tot_cuentas{
+    font-size: 25px;
+    padding: 0px;
+    margin: 0px;
+}
+
+.cuenta_ps.cuenta_dls.cuenta_cripto{
+    float: left;
+}

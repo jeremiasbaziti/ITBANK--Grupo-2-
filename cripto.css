@@ -14,7 +14,7 @@ header {
     background-color: lightblue;
     justify-content: space-between;
     align-items: center;
-    padding: 10px;
+    padding: 1em;
 }
 
 .logo {
@@ -46,7 +46,22 @@ nav a:hover{
     }
 }
 
+#botones{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
 .footer{
-    color: #fff;
-    background: #222222;
+    display: flex;
+    color:aliceblue;
+    text-align: center;
+    min-height: 70px;
+    background-color: darkgray;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
 }

@@ -39,5 +39,15 @@ function cotizaciones() {
 }
 
 function descargar(){
-
+    fetch(url)
+    .then(response =>response.json())
+    .then(data =>{
+        var json = JSON.stringify(data);
+        var blob = new Blob ([json], {type: "aplication/json"});
+        var url = URL.createObjectURL(blob);
+        var a = document.createElement("a")
+        a.href = url;
+        a.download = "cotizaciones.json";
+        a.click();
+    } )
 }

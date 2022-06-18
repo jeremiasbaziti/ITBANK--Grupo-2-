@@ -21,11 +21,6 @@ function cotizaciones() {
     Venta: $${data[3].casa.venta} <br>
     Variacion: ${data[3].casa.variacion}%`
 
-    document.getElementById("soja").innerHTML = `
-    Compra: $${data[2].casa.compra} <br> 
-    Venta: $${data[2].casa.venta} <br>
-    Variacion: ${data[2].casa.variacion}%`
-
     document.getElementById("bolsa").innerHTML = `
     Compra: $${data[4].casa.compra} <br> 
     Venta: $${data[4].casa.venta} <br>

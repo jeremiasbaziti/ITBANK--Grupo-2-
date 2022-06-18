@@ -10,29 +10,33 @@ function cotizaciones() {
     Compra: $${data[0].casa.compra} <br> 
     Venta: $${data[0].casa.venta} <br>
     Variacion: ${data[0].casa.variacion}%`
-    
+
     document.getElementById("blue").innerHTML = `
     Compra: $${data[1].casa.compra} <br> 
     Venta: $${data[1].casa.venta} <br>
     Variacion: ${data[1].casa.variacion}%`
-    
+
     document.getElementById("ccl").innerHTML = `
     Compra: $${data[3].casa.compra} <br> 
     Venta: $${data[3].casa.venta} <br>
     Variacion: ${data[3].casa.variacion}%`
-    
+
+    document.getElementById("soja").innerHTML = `
+    Compra: $${data[2].casa.compra} <br> 
+    Venta: $${data[2].casa.venta} <br>
+    Variacion: ${data[2].casa.variacion}%`
+
     document.getElementById("bolsa").innerHTML = `
     Compra: $${data[4].casa.compra} <br> 
     Venta: $${data[4].casa.venta} <br>
     Variacion: ${data[4].casa.variacion}%`
-    
+
     document.getElementById("turista").innerHTML = `
     Compra: $${data[6].casa.compra} <br> 
     Venta: $${data[6].casa.venta} <br>
     Variacion: ${data[6].casa.variacion}%`
-})
+    })
 }
-
 
 function descargar(){
     fetch(url)

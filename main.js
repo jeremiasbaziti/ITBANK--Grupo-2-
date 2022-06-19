@@ -1,8 +1,6 @@
 var url = "https://www.dolarsi.com/api/api.php?type=valoresprincipales";
 var urlFecha = "https://www.dolarsi.com/api/api.php?type=ultima"
 
-ultimaActualizacion();
-
 cotizaciones();
 
 

@@ -1,8 +1,29 @@
 var url = "https://www.dolarsi.com/api/api.php?type=valoresprincipales";
+var urlFecha = "https://www.dolarsi.com/api/api.php?type=ultima"
+
+ultimaActualizacion();
 
 cotizaciones();
 
+
+function ultimaActualizacion(){
+    var info = document.getElementById("actualizacion")
+
+    info.innerHTML = "";
+
+    fetch(urlFecha)
+    .then(response => response.json())
+    .then(data => {
+            info.innerHTML += `
+            Actualizado:  ${data[0].ultima.zona12.fecha} ${data[0].ultima.zona12.hora}            
+            `;
+    });    
+}
+
 function cotizaciones() {
+    
+    ultimaActualizacion();
+    
     fetch(url)
     .then(response => response.json())
     .then(data => {

@@ -1,6 +1,9 @@
 body{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', sans-serif;
-    margin: 0;
+    font-family: "Raleway", sans-serif;
+    line-height: 1.7;
+    font-size: 18px;
+    background: #2A363B;
+    color: #859196;
 }
 
 a{
@@ -55,13 +58,41 @@ nav a:hover{
     padding-right: 10%;
 }
 
-.footer{
-    display: flex;
-    color:aliceblue;
-    text-align: center;
-    min-height: 70px;
-    background-color: darkgray;
-    justify-content: center;
-    align-items: center;
-    padding: 1em;
+.probootstrap-footer {
+    padding: 7em 0; }
+    .probootstrap-section .probootstrap-heading,
+    .probootstrap-footer .probootstrap-heading {
+      font-size: 40px;
+      line-height: 1.5; }
+      @media screen and (max-width: 768px) {
+        .probootstrap-section .probootstrap-heading,
+        .probootstrap-footer .probootstrap-heading {
+          font-size: 30px; } 
+}
+
+.probootstrap-footer-social li {
+    list-style: none;
+    margin: 0 10px 10px 0;
+    display: inline-block; }
+    .probootstrap-footer-social li a {
+      height: 60px;
+      width: 60px;
+      display: block;
+      float: left;
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 50%;
+      position: relative; }
+    .probootstrap-footer-social li a span {
+        position: absolute;
+        font-size: 26px;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+}
+
+#img{
+    border-color: #2A363B;
+    background-color: #2A363B;
 }

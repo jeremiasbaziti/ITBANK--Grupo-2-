@@ -51,24 +51,27 @@ def readFile(urlfile):
 
 def buscarPorDni(dni, tipo):
     busqueda = []
-    cantidad = [0]
+    cantidad = 0
     cheques = readFile(urlfile)
     for cheque in cheques:
         if cheque["DNI"] == dni and cheque['Tipo'] == tipo:
             cantidad += 1
             busqueda.append(cheque)
-    repetidos = []
-    for che in busqueda:
-        for che2 in busqueda:
-            if che['NroCheque'] == che2['Nrocheque']:
-                repetidos.append(che)
-            repetidos.append(cheque['NroCheque'])
-    if repetidos != []:
-        print("Se encontraron cheques repetidos")
-        return "ERROR Hay cheques duplicados"
-    else:
-        print(f"Se encontraron {cantidad} cheques repetidos")
-        return busqueda
+    print(f"Se encontraron {cantidad} cheques repetidos")
+    return busqueda
+    # repetidos = []
+    # for che in busqueda:
+    #     for che2 in busqueda:
+    #         if che['NroCheque'] == che2['Nrocheque']:
+    #             repetidos.append(che)
+    #         repetidos.append(cheque['NroCheque'])
+    # if repetidos != []:
+    #     print("Se encontraron cheques repetidos")
+    #     return "ERROR Hay cheques duplicados"
+    # else:
+    #     print(f"Se encontraron {cantidad} cheques repetidos")
+    #     return busqueda
+    
 
        
 
@@ -94,17 +97,25 @@ if __name__ == "__main__":
             dni = input("Ingrese el DNI del usuario a consultar: \n")
             tipo = input("Seleccione el tipo de cheque a buscar EMITIDO o DEPOSITADO: \n")
             salida = input("Elija si desea recibir la salida por PANTALLA o CSV: \n")
-            try:
-                resultado = buscarPorDni(dni, tipo)
-                if salida == "PANTALLA":
-                    print(resultado)
-                elif salida == "CSV":
-                    grabarCSV(resultado)
-                else:
-                    print("Opcion invalida")
+            resultado = buscarPorDni(dni, tipo)
+            if salida == "PANTALLA":
+                print(resultado)
+            elif salida == "CSV":
+                grabarCSV(resultado)
+            else:
+                print("Opcion invalida")
 
-            except:
-                print("Ingresó un DNI erroneo")
-            continue
+            # try:
+            #     resultado = buscarPorDni(dni, tipo)
+            #     if salida == "PANTALLA":
+            #         print(resultado)
+            #     elif salida == "CSV":
+            #         grabarCSV(resultado)
+            #     else:
+            #         print("Opcion invalida")
+
+            # except:
+            #     print("Ingresó un DNI erroneo")
+            # continue
         else:
             runtime = False 
